@@ -1,0 +1,7 @@
+{
+  "REPLACE-with-monitor-pk-for-ssh-hardening": ["linux.ssh_root_login", "linux.ssh_password_auth"],
+  "REPLACE-with-monitor-pk-for-encryption-at-rest": ["linux.disk_encryption"],
+  "REPLACE-with-monitor-pk-for-logging-and-time": ["linux.audit_logging", "linux.time_sync"],
+  "REPLACE-with-monitor-pk-for-k8s-workload-security": ["k8s.privileged_containers", "k8s.run_as_non_root", "k8s.network_policies"],
+  "REPLACE-with-monitor-pk-for-k8s-access": ["k8s.cluster_admin_bindings"]
+}

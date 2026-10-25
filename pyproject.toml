@@ -1,0 +1,24 @@
+[project]
+name = "hostproof"
+version = "0.1.0"
+description = "SOC 2 / ISO 27001 evidence from self-hosted Linux and Kubernetes, pushed to Sprinto"
+requires-python = ">=3.10"
+license = "MIT"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.2"]
+
+[project.scripts]
+hostproof = "hostproof.cli:main"
+hostproof-mcp = "hostproof.mcp_server:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "mcp>=1.2"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["hostproof*"]
